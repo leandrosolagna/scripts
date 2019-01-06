@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#############################################################################
-#Script Name    :artifactDelete.sh                                          #
-#Description    :get the info from the repo and delete the artifact name    #
-#Args           :the username and password of artifactory                   #
-#Author  	:Leandro Solagna                                            #
-#Date   	:06/01/2019                                                 #
-#############################################################################
+##########################################################################################
+#Script Name    :artifactDelete.sh                                                       #
+#Description    :get the info from the repo and delete the artifact through the REST API #
+#Args           :the username and password of artifactory                                # 
+#Author  	:Leandro Solagna                                                         #
+#Date   	:06/01/2019                                                              #
+##########################################################################################
 
 
 ARTIFACTUSER=${1}
