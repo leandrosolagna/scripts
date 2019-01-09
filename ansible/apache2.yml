@@ -1,0 +1,27 @@
+---
+- name: Install Apache web server
+  apt:
+          name: apache2
+          state: present
+
+- name: Run the service 
+  service:
+          name: apache2
+          state: started
+          enabled: yes
+      
+- name: apache2 configuration file
+  copy:
+          src: /etc/ansible/roles/apache2/files/apache2.conf
+          dest: /etc/apache2
+
+- name: Test file to the app root directory
+  copy:
+          src: /etc/ansible/roles/apache2/files/test.html
+          dest: /var/www/html
+          owner: www-data
+          group: www-data
+          mode: 0644
+  notify: 
+        - apache2 reload
+...
