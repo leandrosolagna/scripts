@@ -1,3 +1,10 @@
+//////////////////////////////////////////////////////////////////
+//Script Name	:dslJobs.groovy					 /
+//Description	:create jenkins jobs and set their configuration /
+//Author     	:Leandro Solagna                                 /
+//Date       	:07/01/2019					 /
+//////////////////////////////////////////////////////////////////
+
 //GLOBAL VARIABLES
 
 //Job's name
